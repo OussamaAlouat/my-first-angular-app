@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-first-angular-app';
+  title = 'Products';
+  public products: any[];
+
+  constructor() {
+    this.products = [
+      {
+        name: 'Phone XL'
+      },
+      {
+        name: 'Phone Mini'
+      },
+      {
+        name: 'Phone Standard'
+      },
+    ];
+  }
 }
