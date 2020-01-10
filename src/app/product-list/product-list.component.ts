@@ -28,4 +28,9 @@ export class ProductListComponent {
       }
     ];
   }
+
+  share(product) {
+    console.log('Method to share');
+    window.alert(product.name + ' will be shared');
+  }
 }
