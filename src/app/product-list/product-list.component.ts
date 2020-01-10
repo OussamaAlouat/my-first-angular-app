@@ -30,7 +30,11 @@ export class ProductListComponent {
   }
 
   share(product) {
-    console.log('Method to share');
     window.alert(product.name + ' will be shared');
+  }
+
+  onNotify() {
+    window.alert('You will be notified when the product goes on sale');
+
   }
 }
