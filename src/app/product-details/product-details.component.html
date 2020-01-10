@@ -1,2 +1,4 @@
 <h1>{{title}}</h1>
-<p>The product is: {{product}}</p>
+<p>The product is name: {{product.name}}</p>
+<p *ngIf="product.description">Product description: {{product.description}}</p>
+<p *ngIf="product.price">Product price: {{product.price}}</p>
