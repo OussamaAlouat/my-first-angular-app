@@ -1,19 +1,18 @@
-<h2>{{title}}</h2>
+<h2>{{ title }}</h2>
 <div *ngFor="let product of products; index as productId">
   <h3>
-    <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
-      {{product.name}}
+    <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', productId]"
+    >
+      {{ product.name }}
     </a>
   </h3>
 
-  <p *ngIf="product.description">
-    Description: {{product.description}}
-  </p>
+  <p *ngIf="product.description">Description: {{ product.description }}</p>
 
   <button (click)="share(product)">Share</button>
 
-  <app-product-alerts
-    [product]="product"
-    (notify)="onNotify()">
+  <app-product-alerts [product]="product" (notify)="onNotify()">
   </app-product-alerts>
 </div>
